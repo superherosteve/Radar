@@ -1,0 +1,33 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+<!--<a [routerLink]="['/dataeventrecords']" class="navbar-brand"><img src="assets/damienbod.jpg" height="40" style="margin-top:-10px;" /></a>-->
+    </div>
+    <div class="navbar-collapse collapse" id="navbar">
+      <ul class="nav navbar-nav">
+        <!--<li><a *ngIf="isAuthorized" [routerLink]="['/dataeventrecords']">DataEventRecords</a></li>
+        <li><a *ngIf="isAuthorized" [routerLink]="['/dataeventrecords/create']">Create DataEventRecord</a></li>-->
+        <li><!--<a *ngIf="isAuthorized" [routerLink]="['/securefiles']">Secured Files Download</a>--></li>
+
+        <!--<li><a class="navigationLinkButton" *ngIf="!isAuthorized" (click)="login()">{{ 'LOGIN' | translate:lang }}</a></li>
+        <li><a class="navigationLinkButton" *ngIf="isAuthorized" (click)="logout()">{{ 'LOGOUT' | translate:lang }}</a></li>-->
+
+        <li><a class="navigationLinkButton" (click)="changeCulture('de','CH')">DE</a></li>
+        <li><a class="navigationLinkButton" (click)="changeCulture('fr','CH')">FR</a></li>
+        <li><a class="navigationLinkButton" (click)="changeCulture('it','CH')">IT</a></li>
+        <li><a class="navigationLinkButton" (click)="changeCulture('en','US')">EN</a></li>
+
+       <!--<li><a class="navigationLinkButton" *ngIf="oidcSecurityService.checkSessionChanged" (click)="refreshSession()">Refresh Session</a></li>-->
+
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container-fluid -->
+</nav>
+
+<router-outlet></router-outlet>

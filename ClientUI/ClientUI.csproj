@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TypeScriptToolsVersion>2.3</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="src\app\app.constants.ts" />
+    <None Remove="src\app\auth\modules\auth.configuration.ts" />
+    <None Remove="src\app\auth\services\auth.well-known-endpoints.ts" />
+    <None Remove="src\app\auth\services\authorization-result.enum.ts" />
+    <None Remove="src\app\auth\services\jwtkeys.ts" />
+    <None Remove="src\app\auth\services\oidc.security.check-session.ts" />
+    <None Remove="src\app\auth\services\oidc.security.common.ts" />
+    <None Remove="src\app\auth\services\oidc.security.service.ts" />
+    <None Remove="src\app\auth\services\oidc.security.silent-renew.ts" />
+    <None Remove="src\app\auth\services\oidc.security.storage.ts" />
+    <None Remove="src\app\auth\services\oidc.security.user-service.ts" />
+    <None Remove="src\app\auth\services\oidc.security.validation.ts" />
+    <None Remove="src\app\auth\services\uri-encoder.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="src\app\forbidden\" />
+    <Folder Include="src\app\securefile\" />
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="src\app\app.constants.ts" />
+    <TypeScriptCompile Include="src\app\auth\modules\auth.configuration.ts" />
+    <TypeScriptCompile Include="src\app\auth\services\auth.well-known-endpoints.ts" />
+    <TypeScriptCompile Include="src\app\auth\services\authorization-result.enum.ts" />
+    <TypeScriptCompile Include="src\app\auth\services\jwtkeys.ts" />
+    <TypeScriptCompile Include="src\app\auth\services\oidc.security.check-session.ts" />
+    <TypeScriptCompile Include="src\app\auth\services\oidc.security.common.ts" />
+    <TypeScriptCompile Include="src\app\auth\services\oidc.security.service.ts" />
+    <TypeScriptCompile Include="src\app\auth\services\oidc.security.silent-renew.ts" />
+    <TypeScriptCompile Include="src\app\auth\services\oidc.security.storage.ts" />
+    <TypeScriptCompile Include="src\app\auth\services\oidc.security.user-service.ts" />
+    <TypeScriptCompile Include="src\app\auth\services\oidc.security.validation.ts" />
+    <TypeScriptCompile Include="src\app\auth\services\uri-encoder.ts" />
+  </ItemGroup>
+
+</Project>
